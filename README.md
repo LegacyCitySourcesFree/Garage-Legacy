@@ -241,13 +241,6 @@ Config.BuilderAcePermissions = {
 
 <hr/>
 
-<h2 id="licenca">Licença</h2>
-<p>
-  Defina aqui sua licença (MIT, GPL, proprietária, etc).
-</p>
-
-<hr/>
-
 <div align="center">
   <p>
     <strong>Feito para cidades MRI Qbox/QBX</strong><br/>
