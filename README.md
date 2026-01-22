@@ -91,12 +91,6 @@
   <li>Garanta que as dependências iniciem antes do script:</li>
 </ol>
 
-<pre>
-ensure ox_lib
-ensure oxmysql
-ensure mri_garage
-</pre>
-
 <ol start="3">
   <li>Reinicie o servidor ou use <code>restart mri_garage</code>.</li>
 </ol>
