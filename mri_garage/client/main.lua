@@ -1,0 +1,2 @@
+-- client/main.lua
+-- arquivo reservado para futuras extensões

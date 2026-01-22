@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="hidden">
+    <div class="panel">
+      <div class="header">
+        <div class="title">Garage</div>
+        <button class="x" id="btnClose">×</button>
+      </div>
+
+      <div class="search">
+        <span class="icon">⌕</span>
+        <input id="search" placeholder="Search for Vehicle" />
+      </div>
+
+      <div class="list" id="list"></div>
+
+      <div class="footer">
+        <button class="cta" id="btnStore">STORE CURRENT</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Transfer modal -->
+  <div id="transferModal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div class="modal-title">Transferir veículo</div>
+        <button class="x" id="btnTransferClose">×</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="field">
+          <label>ID do player (server)</label>
+          <input id="transferPlayerId" inputmode="numeric" placeholder="ex: 12" />
+          <div class="hint">Dica: normalmente é o número acima da cabeça ou o /id.</div>
+        </div>
+
+        <div class="field">
+          <label>Preço (opcional)</label>
+          <input id="transferPrice" inputmode="numeric" placeholder="0" value="0" />
+        </div>
+
+        <div class="field subtle">
+          <label>Ou CitizenID (se você souber)</label>
+          <input id="transferCitizenId" placeholder="opcional" />
+        </div>
+
+        <div id="transferError" class="error hidden"></div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn" id="btnTransferCancel">Cancelar</button>
+        <button class="btn primary" id="btnTransferConfirm">Transferir</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
